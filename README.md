@@ -1,8 +1,12 @@
 # Prueba-Riwi
 Aqui esta mi prueba de riwi de el modulo 2 
+
 Tomas David Restrepo Osorio 
+
 Clan: Linus
+
 Correo: Trestrepoo13@gmail.com
+
 Ti: 1022147805
 
 
