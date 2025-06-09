@@ -1,0 +1,125 @@
+<!DOCTYPE html> 
+<html lang="es">
+<head>
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsivo -->
+  <title>Sitio web personal</title>
+  <link rel="stylesheet" href="./styles/style.css"> <!-- Enlace al CSS externo -->
+</head>
+<body>
+  <header>
+    <!-- Navegación principal  y enlaces -->
+    <nav class="navbar">
+      <h1>My presentation</h1>
+      <button class="menu-toggle">&#9776;</button> <!-- Botón de menú móvil -->
+      <ul class="nav-links">
+        <li><a href="#aboutme">About me</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Sección de presentacion-->
+    <section id="#aboutme" class="#aboutme">
+      <a href="https://www.instagram.com/tomasrestrep/" target="_blank"> 
+      <img src="./img/logo.webp"  class="imageprofile" >
+      </a> 
+      <h2>Hi, I'm Tomas David Restrepo Osorio. I'm 17 years old and I'm a junior developer. I am a riwi student.</h2>
+      <p>Character cannot be developed in tranquility and stillness. Only through trials and suffering can the soul be strengthened, vision cleared, ambition inspired, and success achieved. (Helen Keller)</p>
+      <a href="#projects" class="btn">Projects</a>
+    </section>
+
+    <!-- Sección de catálogo con categorías -->
+    <section id="projects" class="projects">
+      <h2>These are my projects</h2>
+
+      <!-- Categoría: HTML-->
+      <div class="categoria">
+        <h3>Python</h3>
+        <div class="projects">
+          <article class="project">
+            <a img href="https://github.com/MaxterDuck/semana-3/blob/main/proyecto_semana3.py" target="_blank">
+            <img src="./img/Inventory.png" alt="Python inventory">
+            <a/>
+            <h4>Inventory</h4>
+            <p>Language:Python</p>
+          </article>
+        </div>
+      </div>
+
+      <div class="categoria">
+        <h3>Python</h3>
+        <div class="projects">
+          <article class="project">
+            <a img href="https://github.com/MaxterDuck/Semana_2/blob/main/Proyecto%20Semana%202" target="_blank">
+            <img src="./img/Gestionclf.png" alt="Python inventory">
+            </a>
+            <h4>Ratings management</h4>
+            <p>Language:Python</p>
+          </article>
+        </div>
+      </div>
+
+      <!-- Categoría: CSS -->
+      <div class="categoria">
+        <h3>Html</h3>
+        <div class="projects">
+          <article class="project">
+            <a img href="https://github.com/MaxterDuck/Modulo-2-/tree/main/Semana_2/Proyecto_Semana2" target="_blank">
+            <img src="./img/Ninja.png" alt="CSS ninja">
+            </a>
+            <h4>Ninja CSS</h4>
+            <p>Language: CSS</p>
+          </article>
+        </div>
+      </div>
+
+
+    <!-- Sección sobre mis aspiraciones-->
+    <section id="MoreMe" class="MoreMe">
+      <h2>More about me</h2>
+      <p>My aspirations are to get to work in a multinational programming or inclusion to become companies such as Microsoft, Apple and Oracle. I am also passionate about programming, I feel God creating things and putting functionalities at my whim.</p>
+    </section>
+
+    <!-- Sección de contacto  -->
+    <section id="contacto" class="contacto">
+      <h2>Contact</h2>
+      <form>
+        <!-- Entrada de nombre -->
+        <label for="nombre">Name:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <!-- Entrada de correo -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <!-- Selección de servicio a contratar -->
+        <label for="servicio">Service you want to hire:</label>
+        <select id="servicio" name="servicio">
+          <option>Create a web page </option>
+          <option>Create a mobile App</option>
+          <option>Create a project in Python</option>
+          <option>More</option>
+        </select>
+
+        <!-- Botón de envío -->
+        <button type="submit">Contact</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Pie de página -->    
+  <footer>
+    <p>&copy; 2025 Tomas Restrepo. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Activa/desactiva el menú en móviles
+    document.querySelector('.menu-toggle').addEventListener('click', () => {
+      document.querySelector('.nav-links').classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

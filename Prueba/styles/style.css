@@ -1,0 +1,318 @@
+/* Variables globales para colores y tipografía */
+:root {
+  --color-primario: #656565;
+  --color-secundario: #868686;
+  --color-fondo: #ffffff;
+  --fuente-principal: 'Segoe UI', sans-serif;
+}
+
+/* Estilo base */
+body {
+  margin: 0;
+  font-family: var(--fuente-principal);
+  background-color: var(--color-fondo);
+  overflow-x: hidden;
+}
+    
+/* Imágenes responsive y centradas */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+
+.imageprofile {
+  max-width: 120px;
+  float: right;
+  transform: translateY(-25px);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  gap:10px;
+  border-style: solid;
+  border-radius: 20px;
+  background-color: #ffffff;
+  font-size: 14px;
+  transition: transform 0.3s;
+}
+
+.imageprofile:hover {
+  transform: scale(1.05);
+}
+
+/* Encabezado principal */
+header {
+  background-color: var(--color-primario);
+  color: rgb(255, 255, 255);
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Barra de navegación */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Enlaces de navegación */
+.nav-links {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Botón de menú (solo visible en móviles) */
+.menu-toggle {
+  display: none;
+  background: none;
+  color: white;
+  font-size: 2rem;
+  border: none;
+}
+
+/* Sección principal */
+.aboutme {
+  background-color: rgb(255, 255, 255);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 5rem 2rem;
+  color: white;
+}
+
+/* Botón reutilizable */
+.btn {
+  background-color: var(--color-primario);
+  padding: 0.75rem 1.5rem;
+  color: white;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  transition: background 1s;
+  margin-top: 35px;
+  display: grid;
+  justify-self: center;
+  justify-content: center;
+  width: 200px;
+  height: 20px;
+}
+
+.btn:hover {
+  background-color: #740fe7;
+  box-shadow: 10px 5px 5px rgb(0, 89, 255);
+}
+
+/* Contenedor general para márgenes laterales */
+.container {
+  padding: 0 1rem;
+}
+
+/* Sección de projectos */
+.projects {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2rem;
+  background-color: #ffffff;
+  
+}
+
+/* Categoría de projectos */
+.categoria {
+  margin-bottom: 2rem;
+}
+
+/* Contenedor de tarjetas de projectos*/
+.projects {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+/* Tarjeta individual */
+.project {
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 1rem;
+  border: 1px solid #000;
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+  transition: transform 0.3s;
+  align-self: center;
+}
+
+.project:hover {
+  background-color: var(--color-secundario);
+  box-shadow: 10px 5px 5px rgb(0, 89, 255);
+  transform: scale(1.05);
+}
+
+/* Secciones informativas */
+.MoreMe,
+.contacto {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.MoreMe {
+    border-style: solid;
+    border-color: #000000;
+    border-width: 2px;
+    border-radius: 1rem;
+
+}
+
+/* Formulario de contacto */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  max-width: 400px;
+  border-style: solid;
+  border-radius: 1rem;
+  border-width: 2px; 
+  padding: 10px;
+}
+
+h2 {
+    align-self: center;
+}
+
+h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+    justify-self: center;
+}
+
+a {
+  background-color: (var(--color-secundario));
+  transition: transform 0.5s;
+
+}
+a:hover{
+  background-color: #740fe7;
+  transform: scale(1.);
+  box-shadow: 10px 5px 5px rgb(0, 89, 255);
+  
+}
+
+
+/* Pie de página */
+footer {
+  background-color: var(--color-primario);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+/* ------------------ */
+/* Responsive Design  */
+/* ------------------ */
+
+/* Laptops pequeñas y tablets grandes */
+@media (max-width: 1024px) {
+  .aboutme  {
+    padding: 4rem 1.5rem;
+  }
+
+  .imageprofile {
+    max-width:120px;
+    padding-top:20px;
+  }
+
+  .btn {
+    justify-content: center;
+    transform: translateX(65px);
+  }
+
+  .project {
+    max-width: 300px;
+  }
+}
+
+
+/* Tablets y móviles medianos */
+@media (max-width: 768px) {
+  .projects {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn {
+    transform: translateX(-6px);
+  }
+
+  .imageprofile {
+    transform: translateY(1px);
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: var(--color-primario);
+    padding: 1rem;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links a {
+    padding: 0.75rem 0;
+    text-align: center;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+
+/* Móviles pequeños */
+@media (max-width: 480px) {
+  .aboutme  {
+    padding: 3rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .imageprofile {
+    transform:translateY(1px);
+  }
+  .project {
+    max-width: 90%;
+  }
+}
+
+
